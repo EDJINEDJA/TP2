@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from typing import Union, List
 
-def f(x : List, t : List):
+def f(x : np.array, t : np.array):
     """Define the f fonction
     Args :
-        x : List
-        t : List
+        x : np.array
+        t : np.array
     Return :
         return the function f
     """
@@ -65,4 +65,3 @@ def animator(x : List, t : List, path : str, f : f) -> None:
     ...
 
     plt.show()
-
